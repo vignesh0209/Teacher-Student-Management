@@ -1,38 +1,182 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 156, 96);
+    height: 25px;
+    width: 1318;
+    padding: 24px;
+    column-gap: 20px;
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 4px -1px, rgb(0 0 0 / 14%) 0px 4px 5px 0px, rgb(0 0 0 / 12%) 0px 1px 10px 0px;
+    
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.heading h1 {
+    font-weight: 700;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;    
+    
+    
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.buttons {
+    margin-left:10px ;
+}
+.view-btn {
+  margin-right: 10px;
+  border: none;
+  margin-right: 20px;
+ 
+
+}
+.view-btn .v{
+    text-decoration: none;
+    background-color: rgb(255, 156, 96);
+    font-size: 14px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.8px;
+    font-weight: 500;
 }
 
-.App-link {
-  color: #61dafb;
+.create-btn {
+    margin-right: 10px;
+    border: none;
+
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.create-btn .c {
+    text-decoration: none;
+    background-color: rgb(255, 156, 96);
+    font-size: 14px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.heading1 {
+    width: 1366px;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.teachertable-btn {
+    padding: 11px 22px;
+    border: 1px solid rgba(156, 39, 176, 0.5);
+    background-color: white;
+    border-top-left-radius:4px;
+    border-bottom-left-radius:4px;
+    transition: 0.20s;
+}
+
+.teachertable-btn:hover{
+    background-color: rgba(227, 216, 230, 0.5);
+}
+.teachertable-btn .T{
+    text-decoration: none;
+    color: #551A8B;
+    font-size: 15px;
+    letter-spacing: 1px;
+    
+
+}
+
+.studenttable-btn {
+    padding: 11px 22px;
+    border-left: 0px;
+    border-top: 1px solid rgba(156, 39, 176, 0.5);
+    border-right: 1px solid rgba(156, 39, 176, 0.5);
+    border-bottom: 1px solid rgba(156, 39, 176, 0.5);
+    background-color: white;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    transition: 0.20s;
+}
+
+.studenttable-btn:hover {
+    background-color: rgba(227, 216, 230, 0.5);
+}
+
+.studenttable-btn .S {
+    text-decoration: none;
+    color: #551A8B;
+    font-size: 15px;
+    letter-spacing: 1px;
+
+
+}
+
+.heading2 {
+    width: 1366px;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.teachercreate-btn {
+    padding: 11px 22px;
+    border: 1px solid rgb(25, 118, 210);
+    background-color: white;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    transition: 0.20s;
+}
+
+
+.teachercreate-btn:hover {
+    background-color: rgb(237, 239, 241);
+}
+.teachercreate-btn .TC {
+    text-decoration: none;
+    color: #551A8B;
+    font-size: 15px;
+    letter-spacing: 1px;
+
+
+}
+
+.studentcreate-btn {
+    padding: 11px 22px;
+    border-left: 0px;
+    border-top: 1px solid rgb(25, 118, 210);
+    border-right: 1px solid rgb(25, 118, 210);
+    border-bottom: 1px solid rgb(25, 118, 210);
+    background-color: white;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    transition: 0.20s;
+}
+
+.studentcreate-btn:hover {
+    background-color: rgb(237, 239, 241);
+}
+
+.studentcreate-btn .SC {
+    text-decoration: none;
+    color: #551A8B;
+    font-size: 15px;
+    letter-spacing: 1px;
+
+
+}
+
+#teacher-table ,th,td{
+ border: 1px solid rgba(156, 39, 176, 0.5);
+ border-collapse: collapse;
+}
+
+#teacher-table {
+    margin: 100px 400px;
 }
