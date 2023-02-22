@@ -1,30 +1,19 @@
 import './App.css';
-import { BrowserRouter,Route,Routes } from 'react-router-dom';
-import Create from './components/Create';
-import TeacherCreate from './components/TeacherCreate';
-import NavigationBar from './components/NavigationBar';
-import TeacherTable from './components/TeacherTable';
-import StudentCreate from './components/StudentCreate';
-import Studenttable from './components/StudentTable';
-import View from './components/View';
+import { BrowserRouter } from 'react-router-dom';
+import { Routes,Route } from 'react-router-dom';
+import Create from "./components/Create";
+import Read from "./components/Read";
 
 
 function App(){
   return(
     <>
-      <BrowserRouter>
-        <NavigationBar/>
-        <Routes>
-                <Route path='view' element = {<View/>}/>
-                <Route path='teachertable' element = {<TeacherTable/>}/>
-                <Route path='studenttable' element = {<Studenttable/>}/>
-            
-                <Route path='create' element = {<Create/>}/>
-                <Route path='teachercreate' element = {<TeacherCreate/>}/>
-                <Route path='studentcreate' element = {<StudentCreate/>}/>
-            
-        </Routes>
-      </BrowserRouter>
+     <BrowserRouter>
+     <Routes>
+      <Route path="/" element={<Create/>}/>
+      <Route path="/read" element={<Read/>}/>
+     </Routes>
+     </BrowserRouter>
     </>
   )
 } 
